@@ -11,6 +11,8 @@
 </div>
 */
 
+//ReactElement(object) => HTML(Browser understands)
+
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child1" }, [
     React.createElement("h1", {}, "I'm h1 tag."),
@@ -21,6 +23,8 @@ const parent = React.createElement("div", { id: "parent" }, [
     React.createElement("h2", {}, "I'm h2 tag."),
   ]),
 ]); //parent is an object i.e. React object and it becomes html that the browser understands
+
+//JSX
 
 const heading = React.createElement(
   "h1",
