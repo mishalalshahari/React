@@ -1,0 +1,25 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "Self learning react",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishalalshahari/React.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Mishal Al Shahari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mishalalshahari/React/issues"
+  },
+  "homepage": "https://github.com/mishalalshahari/React#readme",
+  "devDependencies": {
+    "parcel": "^2.10.0"
+  }
+}
