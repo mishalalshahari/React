@@ -1,16 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//JSX - HTML-like or XML-like syntax extension for ECMAScript without any defined semantics.
-//js engine doesn't understand jsx but parcel is doing it for us
-//jsx (transpiled before it reaches the js engine by parcel(acting as manager) with the help of Babel)
-//JSX => Babel transpiles it to React.createElement => ReactElement - JS Object => HTMLElement(render)
-const jsxHeading = (
-  <h1 className="head" tabIndex="1">Hello, React!</h1>
-); //mandatory to use brackets for multiple lines of jsx inorder to make the compiler understand where the jsx starts and ends
+// React Element
+const heading = (
+  <h1 className="head" tabIndex="1">
+    Hello, React!
+  </h1>
+);
 
-console.log(jsxHeading);
+// React Functional Component
+// A react functional component is a plain JavaScript function that accepts props as an argument and returns a React element.
+const HeadingComponent = () => {
+  return <h1>Hello, React Functional Component!</h1>;
+}
+const HeadingComponent2 = () => <h1>Hello, React Functional Component!</h1>;
+//HeadingComponent and HeadingComponent2 are same
+
+// Class Based Component - OLD
+// Functional Component - NEW
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent/>);
